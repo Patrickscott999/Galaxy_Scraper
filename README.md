@@ -1,6 +1,6 @@
-<!-- Banner Image -->
+<!-- Title -->
 <p align="center">
-  <img src="https://i.imgur.com/rYdDIWt.png" alt="Galaxy Scraper" width="650px" />
+  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
 </p>
 
 <p align="center">
@@ -77,24 +77,43 @@ Galaxy Scraper is a powerful web data extraction tool enhanced with AI capabilit
 - Stripe (Payment processing)
 - Radix UI (Component library)
 
-## Demo
+## Key Features Visualization
 
-<p align="center">
-  <img src="https://i.imgur.com/UYkuBF7.gif" alt="Galaxy Scraper Demo" width="600px" />
-</p>
+```mermaid
+graph TD
+    A[Galaxy Scraper] --> B[Web Scraping];
+    A --> C[Data Enrichment];
+    A --> D[Export Options];
+    
+    B --> B1[News];
+    B --> B2[Jobs];
+    B --> B3[Real Estate];
+    B --> B4[Products];
+    
+    C --> C1[Entity Recognition];
+    C --> C2[Sentiment Analysis];
+    C --> C3[Categorization];
+    C --> C4[Keywords];
+    
+    D --> D1[CSV];
+    D --> D2[JSON];
+    D --> D3[Excel];
+    D --> D4[PDF];
+```
 
-> **Note**: The above is a placeholder demo. Replace with actual screenshots or GIFs of your application in action.
+## Subscription Tiers Comparison
 
-## Screenshots
-
-<p align="center">
-  <img src="https://i.imgur.com/4XHsXNC.png" alt="Data Enrichment" width="300px" />
-  <img src="https://i.imgur.com/pCK3Bmx.png" alt="Data Types" width="300px" />
-</p>
-<p align="center">
-  <img src="https://i.imgur.com/lmHvDsR.png" alt="Entity Recognition" width="300px" />
-  <img src="https://i.imgur.com/3DcuK2Q.png" alt="Subscription Plans" width="300px" />
-</p>
+| Feature | Free/Basic | Pro | Enterprise |
+|---------|------------|-----|------------|
+| Items per request | 5 | 50 | Unlimited |
+| Entity Recognition | ✅ | ✅ | ✅ |
+| Sentiment Analysis | ✅ | ✅ | ✅ |
+| Categorization | ❌ | ✅ | ✅ |
+| Keywords | ❌ | ✅ | ✅ |
+| Summaries | ❌ | ❌ | ✅ |
+| Relationship Mapping | ❌ | ❌ | ✅ |
+| Export Formats | CSV only | All formats | All formats |
+| Priority Support | ❌ | ❌ | ✅ |
 
 ## Installation
 
