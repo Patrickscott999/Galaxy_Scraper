@@ -6,10 +6,10 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 flex flex-col items-center justify-center p-4">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          Welcome to Your React App
+          Welcome To The Galaxy
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-300">
-          A complete application with authentication and payment processing capabilities
+          Your AI-powered web data extraction and enrichment platform
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Button asChild size="lg">

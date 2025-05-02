@@ -4,9 +4,13 @@ import { AuthProvider } from '@/lib/authContext'
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'React App with Auth & Stripe',
-  description: 'A React application with authentication and Stripe integration',
-  generator: 'v0.dev',
+  title: 'Galaxy Scraper | AI-Powered Web Data Extraction',
+  description: 'Extract, analyze, and enrich web data with AI-powered insights and multi-format exports',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  }
 }
 
 export default function RootLayout({

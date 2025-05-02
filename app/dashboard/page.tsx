@@ -88,8 +88,8 @@ export default function DashboardPage() {
           </Button>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card>
+        <div className="grid grid-cols-1 gap-6">
+          <Card className="w-full max-w-lg mx-auto">
             <CardHeader>
               <CardTitle>Welcome, {userName}!</CardTitle>
               <CardDescription>
@@ -106,37 +106,18 @@ export default function DashboardPage() {
                   <p className="text-sm">The app is running in development mode without Firebase credentials.</p>
                 </div>
               )}
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardHeader>
-              <CardTitle>Make a Payment</CardTitle>
-              <CardDescription>Test our Stripe integration</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <StripeProvider
-                fallback={
-                  <div className="text-center p-4">
-                    <p className="mb-4">Stripe integration is not configured yet.</p>
-                    <p className="text-sm text-gray-500">To enable payments, add your Stripe keys to the environment variables.</p>
-                  </div>
-                }
-              >
-                <PaymentForm 
-                  amount={1999} 
-                  description="Test Payment"
-                  onSuccess={() => toast({
-                    title: "Payment Successful",
-                    description: "Your payment has been processed successfully.",
-                  })}
-                  onError={(error) => toast({
-                    title: "Payment Failed",
-                    description: error.message || "An error occurred during payment processing.",
-                    variant: "destructive",
-                  })}
-                />
-              </StripeProvider>
+              
+              <div className="mt-6 pt-4 border-t border-gray-700">
+                <h3 className="text-lg font-medium mb-3">Quick Actions</h3>
+                <div className="flex flex-col gap-3">
+                  <Button asChild className="bg-purple-600 hover:bg-purple-700 w-full">
+                    <Link href="/scraper">Launch Galaxy Scraper</Link>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/subscriptions">Manage Subscription</Link>
+                  </Button>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
